@@ -13,25 +13,38 @@ for (let i=0; i<4; i++) {
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
-
+for (let i=0; i<=5; i++) {
+console.log(i);
+}
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
-
+for (let i=3; i<=5; i++) {
+  console.log(i);
+  }
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
-
+for (let i=2; i<=10; i+=2) {
+  console.log(i);
+  }
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
-
+for (let i=5; i>=0; i--) {
+  console.log(i);
+  }
 
 // 2. For of loops  
 console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-console.log('Some stars:');
+//REVIEW !!!
+console.log('Some stars: Polaris,', 'Gacrux,', 'Formalhaut,', 'Rigel,', 'Deneb');
+for (let star of stars){
+  star = star;
+  console.log(star);
+}
 
 
 // 3. While loops  
@@ -39,9 +52,27 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let star = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
+let i = 0;
+while (i < star.length) {
+const thisStars = star[i];
+console.log(thisStars);
+i++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-
+let index = 0;
+const max = 6;
+while (index < max){
+console.log(index);
+index++;
+}
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let ii= 10;
+while (ii >= 5) {
+  const thisii = ii[i]
+console.log(ii);
+ii--;
+}
